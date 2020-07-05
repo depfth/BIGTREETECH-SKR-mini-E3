@@ -2451,7 +2451,7 @@ void MarlinSettings::reset() {
   //
 
   #if HAS_FILAMENT_SENSOR
-    runout.enabled = true;
+    runout.enabled = false;
     runout.reset();
     #ifdef FILAMENT_RUNOUT_DISTANCE_MM
       runout.set_runout_distance(FILAMENT_RUNOUT_DISTANCE_MM);
