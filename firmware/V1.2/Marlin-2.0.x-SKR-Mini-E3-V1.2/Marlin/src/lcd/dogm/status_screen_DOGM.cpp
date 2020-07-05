@@ -677,7 +677,7 @@ void MarlinUI::draw_status_screen() {
         //
 
         #if ENABLED(SHOW_REMAINING_TIME)
-          if (blink && estimation_string[0]) {
+          if (estimation_string[0]) {
             lcd_put_wchar(estimation_x_pos, EXTRAS_BASELINE, 'R');
             lcd_put_u8str(estimation_string);
           }
